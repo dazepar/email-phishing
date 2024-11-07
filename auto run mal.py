@@ -46,3 +46,6 @@ if __name__ == "__main__":
     except (zipfile.BadZipFile, RuntimeError) as e:
         print("Có lỗi xảy ra trong quá trình giải nén:", e)
 # có thể custom lại để mã hóa link tải, xóa file zip sau khi thực thi 
+# dùng pyinstaller để chuyển .py sang .exe
+# pip install pyinstaller
+# pyinstaller --onefile pyy.py
